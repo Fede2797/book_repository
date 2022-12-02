@@ -13,6 +13,10 @@ const bookSchema = new Schema({
     release_year: {
         type: String,
         required: [true, 'Year of release is required']
+    },
+    state: {
+        type: String,
+        default: "ACTIVE"
     }
   });
 
